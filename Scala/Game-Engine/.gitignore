@@ -7,7 +7,8 @@
 *.o
 *.so
 *.scala
-out/*
+out/
+.vscode/
 
 # Packages #
 ############
