@@ -3,7 +3,6 @@ import javax.swing.{BorderFactory, JFrame, JLabel, JPanel, JTextField, SwingCons
 
 class Sudoku extends BoardGame {
   var board: JPanel = null
-
   def drawer(panel: JPanel, frame: JFrame): Unit = {
     board = new JPanel()
     board.setLayout(new GridLayout(rows, cols))
@@ -13,10 +12,10 @@ class Sudoku extends BoardGame {
       jLabel.setFont(new Font(Font.DIALOG, Font.BOLD, 75))
       board.add(jLabel)
     }
-    frame.add(horizontalIndex.jPanel, BorderLayout.NORTH)
-    panel.add(horizontalIndex.copy().jPanel, 0)
-    frame.add(verticalIndex.jPanel, BorderLayout.WEST)
-    frame.add(verticalIndex.copy().jPanel, BorderLayout.EAST)
+    frame.add(horizontalIndexes.jPanel, BorderLayout.NORTH)
+    panel.add(horizontalIndexes.copy().jPanel, 0)
+    frame.add(verticalIndexes.jPanel, BorderLayout.WEST)
+    frame.add(verticalIndexes.copy().jPanel, BorderLayout.EAST)
     frame.add(board, BorderLayout.CENTER)
     frame.revalidate()
   }
@@ -25,10 +24,10 @@ class Sudoku extends BoardGame {
     val input = textField.getText
     if (
       input.length() != 4
-        || !horizontalIndex.range.contains(input.charAt(0))
-        || !verticalIndex.range.contains(input.charAt(1) - 48)
+        || !horizontalIndexes.range.contains(input.charAt(0))
+        || !verticalIndexes.range.contains(input.charAt(1) - 48)
         || input.charAt(2) != ' '
-        || !verticalIndex.range.contains(input.charAt(3) - 48)
+        || !verticalIndexes.range.contains(input.charAt(3) - 48)
     ) {
       return
     }
@@ -47,6 +46,6 @@ class Sudoku extends BoardGame {
 
   override var rows: Int = 9
   override var cols: Int = 9
-  horizontalIndex = new HorizontalIndex(cols)
-  verticalIndex = new VerticalIndex(rows)
+  horizontalIndexes = new HorizontalIndex(cols)
+  verticalIndexes = new VerticalIndex(rows)
 }

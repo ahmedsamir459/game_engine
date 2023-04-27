@@ -6,8 +6,8 @@ class TicTacToeEngine extends BoardGame {
 
   override var rows: Int = 3
   override var cols: Int = 3
-  horizontalIndex = new HorizontalIndex(cols)
-  verticalIndex = new VerticalIndex(rows)
+  horizontalIndexes = new HorizontalIndex(cols)
+  verticalIndexes = new VerticalIndex(rows)
   var board: JPanel = null
   var firstPlayerTurn: Boolean = true
 
@@ -21,40 +21,33 @@ class TicTacToeEngine extends BoardGame {
       jLabel.setFont(new Font(Font.DIALOG, Font.BOLD, 75))
       jLabel
     })
-
     labels.foreach(board.add)
-
     firstPlayerTurn = true
-    frame.add(horizontalIndex.jPanel, BorderLayout.NORTH)
-    panel.add(horizontalIndex.copy().jPanel, 0)
-    frame.add(verticalIndex.jPanel, BorderLayout.WEST)
-    frame.add(verticalIndex.copy().jPanel, BorderLayout.EAST)
+    frame.add(horizontalIndexes.jPanel, BorderLayout.NORTH)
+    panel.add(horizontalIndexes.copy().jPanel, 0)
+    frame.add(verticalIndexes.jPanel, BorderLayout.WEST)
+    frame.add(verticalIndexes.copy().jPanel, BorderLayout.EAST)
     frame.add(board, BorderLayout.CENTER)
     frame.revalidate()
   }
-
-
   def controller(textField: JTextField, frame: JFrame): Unit = {
     val input = textField.getText
     if (
       input.length() != 2
-        || !horizontalIndex.range.contains(input.charAt(0))
-        || !verticalIndex.range.contains(input.charAt(1) - 48)
+        || !horizontalIndexes.range.contains(input.charAt(0))
+        || !verticalIndexes.range.contains(input.charAt(1) - 48)
     ) {
       return
     }
-
     val index: Int =
       cols * ((rows - 1) - (input.charAt(1) - 49)) + (input.charAt(0) - 65)
     if (board.getComponent(index).asInstanceOf[JLabel].getText != "") {
       return
     }
-
     board
       .getComponent(index)
       .asInstanceOf[JLabel]
       .setText(if (firstPlayerTurn) "X" else "O")
-
     textField.setText("")
     firstPlayerTurn = !firstPlayerTurn
   }

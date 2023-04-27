@@ -2,7 +2,7 @@ package scala
 
 import java.awt.GridLayout
 import javax.swing.border.EmptyBorder
-import javax.swing.{JLabel, JPanel, SwingConstants}
+import javax.swing.JPanel
 import scala.collection.immutable.NumericRange
 
 case class HorizontalIndex(cols: Int) extends Index {
