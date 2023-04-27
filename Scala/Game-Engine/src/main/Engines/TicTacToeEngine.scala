@@ -1,4 +1,7 @@
-package scala
+package Engines
+
+import Abstract.BoardGame
+
 import java.awt.{BorderLayout, Color, Font, GridLayout}
 import javax.swing.{BorderFactory, JFrame, JLabel, JPanel, JTextField, SwingConstants}
 

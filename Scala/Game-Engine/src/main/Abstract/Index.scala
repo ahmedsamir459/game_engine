@@ -1,4 +1,4 @@
-package scala
+package Abstract
 
 import javax.swing.{JLabel, JPanel, SwingConstants}
 

@@ -1,4 +1,6 @@
-package scala
+package Abstract
+
+import Engines.{HorizontalIndex, VerticalIndex}
 
 import javax.swing.{JFrame, JPanel, JTextField}
 
