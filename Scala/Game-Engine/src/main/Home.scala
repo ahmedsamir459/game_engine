@@ -1,4 +1,4 @@
-import Engines.{BoardGameEngine, Sudoku, TicTacToeEngine}
+import Engines.{BoardGameEngine,SudokuEngine, TicTacToeEngine}
 
 import java.awt.{BorderLayout, Color, Dimension}
 import javax.swing.{ImageIcon, JButton, JFrame, JPanel, WindowConstants}
@@ -15,7 +15,7 @@ object Home extends App {
   val checkers: JButton = new JButton("Checkers")
   val connect4: JButton = new JButton("Connect-4")
   val eightQueens: JButton = new JButton("Eight Queens")
-  val reverse: JButton = new JButton("Reverse")
+//  val reverse: JButton = new JButton("Reverse")
 
   frame.setMinimumSize(new Dimension(600, 600))
   frame.setLocationRelativeTo(null)
@@ -37,7 +37,7 @@ object Home extends App {
   connect4.setIcon(loadImageIcon("resources/connect-four.png", 100, 100))
   sudoku.setIcon(loadImageIcon("resources/sudoku.png", 100, 100))
   eightQueens.setIcon(loadImageIcon("resources/eight-queens.png", 100, 100))
-  reverse.setIcon(loadImageIcon("resources/reverse.png", 10, 5))
+//  reverse.setIcon(loadImageIcon("resources/reverse.png", 10, 5))
 
 
   val buttonList = List(chess, xo, checkers, connect4, sudoku, eightQueens)
@@ -50,16 +50,16 @@ object Home extends App {
   })
 
   sudoku.addActionListener(_ => {
-    val sudoku = new Sudoku()
+    val sudoku = new SudokuEngine()
     panel.setVisible(false)
     new BoardGameEngine(frame, sudoku.getController, sudoku.getDrawer)
   })
-  reverse.addActionListener(_ => {
-      panel.setVisible(true)
-  })
+//  reverse.addActionListener(_ => {
+//      panel.setVisible(true)
+//  })
 
   frame.add(panel)
-  frame.add(reverse, BorderLayout.NORTH)
+//  frame.add(reverse, BorderLayout.NORTH)
   buttonList.foreach(panel.add)
 
   frame.pack()

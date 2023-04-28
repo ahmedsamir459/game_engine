@@ -9,9 +9,8 @@ class TicTacToeEngine extends BoardGame {
 
   override var rows: Int = 3
   override var cols: Int = 3
-  horizontalIndexes = new HorizontalIndex(cols)
-  verticalIndexes = new VerticalIndex(rows)
-  var board: JPanel = null
+  horizontalIndexes =  HorizontalIndex(cols)
+  verticalIndexes =  VerticalIndex(rows)
   var firstPlayerTurn: Boolean = true
 
   def drawer(panel: JPanel, frame: JFrame): Unit = {
@@ -40,7 +39,7 @@ class TicTacToeEngine extends BoardGame {
         || !horizontalIndexes.range.contains(input.charAt(0))
         || !verticalIndexes.range.contains(input.charAt(1) - 48)
     ) {
-      return
+      errorMessage("invalid input", frame)
     }
     val index: Int =
       cols * ((rows - 1) - (input.charAt(1) - 49)) + (input.charAt(0) - 65)
