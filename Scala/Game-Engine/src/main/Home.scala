@@ -1,4 +1,4 @@
-import Engines.{BoardGameEngine, ConnectFour, SudokuEngine, TicTacToe}
+import Engines.{BoardGameEngine, ConnectFour, SudokuEngine, TicTacToeEngine}
 
 import java.awt.{BorderLayout, Color, Dimension}
 import javax.swing.{ImageIcon, JButton, JFrame, JPanel, WindowConstants}
@@ -46,7 +46,7 @@ object Home {
     buttonList.foreach(_.setBackground(Color.white))
 
     xo.addActionListener(_ => {
-      val ticTacToe = new TicTacToe()
+      val ticTacToe = new TicTacToeEngine()
       panel.setVisible(false)
       new BoardGameEngine(frame, ticTacToe.getController, ticTacToe.getDrawer)
     })
