@@ -1,0 +1,35 @@
+/* Set the font family and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to bottom right, #49beb6, #a7ffa7);
+}
+
+
+/* Style the main heading */
+h1 {
+  margin-top: 50px;
+  margin-left: 450px;
+  color: #f4c180
+}
+
+/* Style the subheadings */
+h2{
+  margin-top: 20px;
+  color: black
+
+}
+
+/* Style the game options */
+h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffffd4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+

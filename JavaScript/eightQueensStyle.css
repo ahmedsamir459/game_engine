@@ -1,0 +1,61 @@
+body {
+  background-image: linear-gradient(to bottom right, #49beb6, #a7ffa7);
+}
+
+h1 {
+  margin: 20px;
+}
+
+.chessboard {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.chessboard th,
+.chessboard td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.Text {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.Move {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.chessboard th {
+  background-color: wheat;
+  font-weight: bold;
+}
+
+.chessboard .white {
+  background-color: #fff;
+}
+
+.chessboard .black {
+  background-color: #e2ded3;
+}
+
+.chessboard td:nth-child(1),
+.chessboard th:nth-child(1) {
+  background-color: wheat;
+  font-weight: bold;
+}

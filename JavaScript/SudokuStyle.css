@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(to bottom right, #49beb6, #a7ffa7);
+}
+
+
+.sudoku-container {
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.Move {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  background-color: whitesmoke;
+}
+
+.sudoku-cell-header {
+  font-weight: bold;
+  background-color: wheat;
+}
+
+.sudoku-cell-filled {
+  font-weight: bold;
+}
+
+.sudoku-input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
