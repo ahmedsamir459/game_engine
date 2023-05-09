@@ -584,7 +584,7 @@ replace(pair,first ,second){
   drawer(pair){
       
      // document.body.style.background="rgb(30, 36, 50)"
-     document.body.innerHTML=`<script src="chess.js" ></script>`
+      document.body.innerHTML=`<script src="chess.js" ></script>`
       let all=document.createElement('div');
       all.className='all';
       let text=document.createElement('div')
@@ -595,18 +595,17 @@ replace(pair,first ,second){
   
       let button=document.createElement('button');
       button.className='button';
-      button.textContent = `Enter postion of first piece then space then second piece ex:17 16 `;
+      button.textContent = `Enter position of first piece then space then second piece (col then row) ex:17 16`;
       let con=document.createElement('div');
           con.className='contain';
       let button2=document.createElement('button');
       button2.className='button';
       button2.id="turn";
       button2.textContent = 'W';
-      button2.style.backgroundColor='white';  
-           
+      button2.style.backgroundColor='white';
       for(let i=0;i<9;i++){
         
-        let box=document.createElement('div'); 
+        let box=document.createElement('div');
         box.classList.add('square');
        
         box.textContent=i
