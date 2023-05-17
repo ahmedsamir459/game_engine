@@ -1,0 +1,21 @@
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /home/ahmed/Downloads/Game-Engine/src/main/scala/ControllerFunctions.scala:116:8 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m116 |[0m        [33mreturn[0m [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mNon local returns are no longer supported; use scala.util.control.NonLocalReturns instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /home/ahmed/Downloads/Game-Engine/src/main/scala/ControllerFunctions.scala:131:8 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m131 |[0m        [33mreturn[0m [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mNon local returns are no longer supported; use scala.util.control.NonLocalReturns instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /home/ahmed/Downloads/Game-Engine/src/main/scala/ControllerFunctions.scala:217:8 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m217 |[0m        [33mreturn[0m [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mNon local returns are no longer supported; use scala.util.control.NonLocalReturns instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /home/ahmed/Downloads/Game-Engine/src/main/scala/ControllerFunctions.scala:232:8 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m232 |[0m        [33mreturn[0m [31mfalse[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mNon local returns are no longer supported; use scala.util.control.NonLocalReturns instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /home/ahmed/Downloads/Game-Engine/src/main/scala/ControllerFunctions.scala:937:8 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m937 |[0m        [33mreturn[0m [31mtrue[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m    |[0m        ^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m    |[0mNon local returns are no longer supported; use scala.util.control.NonLocalReturns instead[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 warnings found[0m
